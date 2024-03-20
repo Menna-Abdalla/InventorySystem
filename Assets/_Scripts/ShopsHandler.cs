@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
 
-public class UIShopHandler : MonoBehaviour
+public class ShopsHandler : MonoBehaviour
 {
     public ShopKeeperData[] shopKeeperItem;
     public GameObject[] btnHolder;
@@ -13,11 +13,11 @@ public class UIShopHandler : MonoBehaviour
     //public List<GameObject> btnItems = new List<GameObject>();
     private void OnEnable()
     {
-        EventsManager.ePurchace += ManageStock;
+        EventsManager.eManageStock += ManageStock;
     }
     private void OnDisable()
     {
-        EventsManager.ePurchace -= ManageStock;
+        EventsManager.eManageStock -= ManageStock;
     }
 
     // Start is called before the first frame update

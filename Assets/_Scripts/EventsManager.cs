@@ -6,23 +6,32 @@ using UnityEngine.UI;
 public static class EventsManager 
 {
     #region Delegutes and events
-    public delegate void dPurchace(ItemData data, string processName); // (int id);
-    public static event dPurchace ePurchace;
+    public delegate void dManageStock(ItemData data, string processName); // (int id);
+    public static event dManageStock eManageStock;
 
-    
+    public delegate void dATM_Error( string errorName); // (int id);
+    public static event dATM_Error eATM_Error;
 
     #endregion
 
     #region Functions
 
-    public static void Purchace(ItemData data, string processName)
+    public static void ManageStock(ItemData data, string processName)
     {
-        if (ePurchace != null)
+        if (eManageStock != null)
         {
-            ePurchace(data, processName);
+            eManageStock(data, processName);
         }
     }
-   
+
+    public static void ATM_Error( string errorName)
+    {
+        if (eATM_Error != null)
+        {
+            eATM_Error(errorName);
+        }
+    }
+
 
     #endregion
 

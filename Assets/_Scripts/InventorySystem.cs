@@ -20,7 +20,7 @@ public class InventorySystem : MonoBehaviour
     {
         if (!ValidatePurchase(data)) return;
 
-        EventsManager.Purchace(data, "purchase");
+        EventsManager.ManageStock(data, "purchase");
         if (inventoryItemsDictionary.TryGetValue(data, out GameObject itemObject))
         {
             itemObject.GetComponent<InventoryItemObject>().increaseStock(data); //.inventoryItem.itemStock.itemCount++;
@@ -42,7 +42,7 @@ public class InventorySystem : MonoBehaviour
         //if (data.originalShopID == shopID)
 
             data.shopID = shopID;
-            EventsManager.Purchace(data, "sell");
+            EventsManager.ManageStock(data, "sell");
 
 
         //if (inventoryItemsDictionary.TryGetValue(data, out ItemHandler handler))

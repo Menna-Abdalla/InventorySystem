@@ -10,14 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 80d665bb523a7024597c307611a417cd, type: 3}
-  m_Name: Cat
+  m_Name: Chips
   m_EditorClassIdentifier: 
-  ItemName: Cat
+  ItemName: Chips
   id: 1
-  icon: {fileID: 0}
-  buyPrice: 100
+  icon: {fileID: 21300000, guid: 8053bc3e2f5647f4f84c68e68816b64c, type: 3}
+  buyPrice: 10
   sellCost: 20
   shopID: 2
+  originalShopID: 0
   countInInventory: 12
   countInShop: 8
   isInventory: 0

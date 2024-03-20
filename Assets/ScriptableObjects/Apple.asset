@@ -14,10 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemName: apple
   id: 1
-  icon: {fileID: 21300000, guid: 7efd4168743fc4c218a9101148393244, type: 3}
-  buyPrice: 15
+  icon: {fileID: 21300000, guid: c63f94dcbf254f24b88cb5ce8c2b8996, type: 3}
+  buyPrice: 50
   sellCost: 10
-  shopID: 0
+  shopID: 2
+  originalShopID: 0
   countInInventory: 19
   countInShop: -4
   isInventory: 0

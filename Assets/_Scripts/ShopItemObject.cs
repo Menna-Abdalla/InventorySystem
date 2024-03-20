@@ -7,11 +7,11 @@ public class ShopItemObject : MonoBehaviour
     public ItemObject shopItem;
     private void OnEnable()
     {
-        EventsManager.ePurchace += decreaseStock;
+        EventsManager.eManageStock += decreaseStock;
     }
     private void OnDisable()
     {
-        EventsManager.ePurchace -= decreaseStock;
+        EventsManager.eManageStock -= decreaseStock;
     }
     public void OnShopItemClick()
     {

@@ -13,18 +13,22 @@ public class CoinsManager : MonoBehaviour
     void Awake()
     {
         instance = this;
-        playerData = PlayerManager.instance.playerData;
+        
         //OnValueChanged?.Invoke(playerData.Coins);
+    }
+    private void Start()
+    {
+        playerData = PlayerManager.instance.playerData;
     }
     private void OnEnable()
     {
-        EventsManager.ePurchace += GetAmountFromData;
+        EventsManager.eManageStock += GetAmountFromData;
 
     }
 
     private void OnDisable()
     {
-        EventsManager.ePurchace -= GetAmountFromData;
+        EventsManager.eManageStock -= GetAmountFromData;
     }
      public void GetAmountFromData(ItemData data, string process)
     {
@@ -54,6 +58,7 @@ public class CoinsManager : MonoBehaviour
         }
         else
         {
+            EventsManager.ATM_Error("Error player does not have enough coins!");
             print("Error player does not have enough coins"); 
         }
        
@@ -68,6 +73,7 @@ public class CoinsManager : MonoBehaviour
         }
         else
         {
+            EventsManager.ATM_Error("Error Bank does not have enough coins!");
             print("Error Bank does not have enough coins");
         }
     }

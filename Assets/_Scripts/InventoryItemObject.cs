@@ -10,11 +10,11 @@ public class InventoryItemObject : MonoBehaviour
 
     private void OnEnable()
     {
-        EventsManager.ePurchace += decreaseStock;
+        EventsManager.eManageStock += decreaseStock;
     }
     private void OnDisable()
     {
-        EventsManager.ePurchace -= decreaseStock;
+        EventsManager.eManageStock -= decreaseStock;
     }
 
 

@@ -10,14 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 80d665bb523a7024597c307611a417cd, type: 3}
-  m_Name: Dog
+  m_Name: Drink
   m_EditorClassIdentifier: 
-  ItemName: Dog
+  ItemName: Drink
   id: 2
-  icon: {fileID: 0}
-  buyPrice: 200
+  icon: {fileID: 21300000, guid: caa8847c78e0d774bab1b7ce42e44bf3, type: 3}
+  buyPrice: 15
   sellCost: 5
   shopID: 2
+  originalShopID: 0
   countInInventory: 12
   countInShop: 13
   isInventory: 0

@@ -14,10 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemName: Banana
   id: 2
-  icon: {fileID: 21300000, guid: 9bf5fe38fdda04af29528c06a571c837, type: 3}
-  buyPrice: 20
+  icon: {fileID: 21300000, guid: 6cc77426208de034f90fde7532f9b422, type: 3}
+  buyPrice: 25
   sellCost: 10
-  shopID: 0
+  shopID: 1
+  originalShopID: 0
   countInInventory: 21
   countInShop: 4
   isInventory: 0
