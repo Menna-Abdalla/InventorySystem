@@ -43,3 +43,10 @@ This repository contains a Unity project showcasing four interactive game elemen
 5. Player can sleep using the bed button, and their bank account balance increases by 10% upon waking up.
 6. Shopkeepers are initially selling different items.
 7. Player's balances (regular coins and bank account) change appropriately upon interactions with the ATM.
+
+
+---
+#### Unity Version: 
+        2021.3.29
+#### Screen Resolution: 
+        3840*2160
